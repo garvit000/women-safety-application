@@ -13,7 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/ic_app_logo_placeholder"
-        app:tint="@color/dark_blue"
+        app:tint="?attr/colorPrimary" 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,13 +81,11 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/signup_action_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Sign Up"
-        android:backgroundTint="@color/purple_500"
-        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/confirm_password_input_layout_signup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
