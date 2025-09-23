@@ -62,7 +62,6 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/manage_contacts_button"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Manage Emergency Contacts"

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_map"
             app:destination="@id/nav_map" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_emergency_contacts"
+            app:destination="@id/nav_emergency_contacts" />
     </fragment>
 
     <fragment
@@ -32,6 +35,12 @@
         android:name="com.example.myapplication.ui.settings.SettingsFragment"
         android:label="@string/menu_settings" 
         tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_emergency_contacts"
+        android:name="com.example.myapplication.ui.contacts.EmergencyContactsFragment"
+        android:label="Emergency Contacts"
+        tools:layout="@layout/fragment_emergency_contacts" />
 
     <!-- Removed nav_gallery and nav_slideshow as they are not core features -->
 

@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
 
     private companion object {
         private const val TAG = "HomeFragment"
-        private const val EMERGENCY_PHONE_NUMBER = "1234567890" // Placeholder
+        private const val EMERGENCY_PHONE_NUMBER = "8764986988" // Placeholder
     }
 
     private val requestPermissionsLauncher = registerForActivityResult(
