@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:paddingBottom="16dp"
     tools:context=".ui.home.HomeFragment">
 
     <com.google.android.material.button.MaterialButton
@@ -22,7 +23,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintVertical_bias="0.4"
-        android:contentDescription="SOS Alert Button" />
+        android:contentDescription="SOS Alert Button"
+        android:layout_marginTop="16dp" />
 
     <LinearLayout
         android:id="@+id/map_button_container"
@@ -30,7 +32,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp" 
         android:padding="8dp" 
         android:clickable="true"
         android:focusable="true"
@@ -38,13 +40,13 @@
         app:layout_constraintTop_toBottomOf="@+id/sos_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/manage_contacts_button">
 
         <ImageView
             android:id="@+id/map_icon"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:src="@drawable/ic_map" 
+            android:src="@android:drawable/ic_dialog_map" 
             android:contentDescription="Map Icon"
             app:tint="?attr/colorPrimary" />
 
@@ -57,5 +59,19 @@
             android:textSize="18sp"
             android:layout_marginTop="8dp"/>
     </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/manage_contacts_button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Manage Emergency Contacts"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/map_button_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
